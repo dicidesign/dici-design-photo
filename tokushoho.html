@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特定商取引法に基づく表記 - d'ici design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hannari+Mincho&family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="subpage">
+    
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/dici_logo_white.png" alt="d'ici design Logo">
+        </a>
+        <nav>
+            <a href="index.html#works"><span>Works</span></a>
+            <a href="index.html#flow"><span>Flow</span></a>
+            <a href="index.html#price"><span>Price</span></a>
+            <a href="index.html#contact"><span>Contact</span></a>
+        </nav>
+        <button id="hamburger-btn" class="hamburger-btn">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+        </button>
+    </header>
+
+    <main class="subpage-content" id="toku-title">
+        <div class="subpage-title">
+            <h1>Legal Notice</h1>
+            <p>特定商取引法に基づく表記</p>
+        </div>
+
+        <div class="text-container">
+            <dl class="tokushoho-table">
+                <dt>事業者名</dt>
+                <dd>d'ici design</dd>
+
+                <dt>運営統括責任者</dt>
+                <dd>川原 朝光　(カワハラ トモミツ)</dd>
+
+                <dt>所在地</dt>
+                <dd>〒541-0046 大阪府大阪市中央区平野町１丁目４−１ ハイネス北浜604<br>※請求があった場合、遅滞なく開示いたします。</dd>
+
+                <dt>電話番号</dt>
+                <dd>090-3925-3365<br>※請求があった場合、遅滞なく開示いたします。</dd>
+
+                <dt>メールアドレス</dt>
+                <dd>dicidesign2020@gmail.com</dd>
+
+                <dt>ウェブサイトURL</dt>
+                <dd>dicidesign.com</dd>
+
+                <dt>サービス対価</dt>
+                <dd>各撮影プランのページに記載の料金に基づきます。</dd>
+
+                <dt>対価以外に必要となる費用</dt>
+                <dd>出張撮影の場合の交通費、その他撮影内容に応じて発生する実費（スタジオ代、小道具代など）。これらについては、お見積もり時に明示いたします。</dd>
+
+                <dt>お支払い方法</dt>
+                <dd>銀行振込</dd>
+
+                <dt>お支払い時期</dt>
+                <dd>原則として、撮影データの納品後、当方が発行する請求書に基づき、指定の期日までにお支払いをお願いいたします。</dd>
+
+                <dt>サービスの提供時期</dt>
+                <dd>お客様と合意した撮影スケジュールに基づき、サービスを提供いたします。</dd>
+
+                <dt>キャンセル・返品について</dt>
+                <dd>撮影確定後のキャンセルについては、以下のキャンセル料が発生する場合がございます。<br>
+                    ・撮影日の7日前〜2日前：お見積もり金額の30%<br>
+                    ・撮影日の前日：お見積もり金額の50%<br>
+                    ・撮影日当日：お見積もり金額の100%<br>
+                    サービスの特性上、撮影実施後およびデータ納品後の返金・返品は原則としてお受けできません。ただし、当方の責に帰すべき事由がある場合は、協議の上、誠意をもって対応いたします。</dd>
+            </dl>
+        </div>
+    </main>
+
+    <!-- (ここにフッターをコピー＆ペースト) -->
+     <footer id="contact" class="footer">
+        <div class="footer-container">
+            <!-- 左側のナビゲーション -->
+            <nav class="footer-nav">
+                <a href="#works">Works</a>
+                <a href="#flow">Flow</a>
+                <a href="#price">Price</a>
+                <a href="#contact">Contact</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="tokushoho.html">Legal Notice</a>
+            </nav>
+
+            <!-- 中央下のロゴとコピーライト -->
+            <div class="footer-bottom">
+                <a href="index.html" class="footer-logo">
+                    <img src="images/dici_logo_white.png" alt="d'ici design Logo">
+                </a>
+                <p class="copyright">&copy; 2024 d'ici design. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        //======================================
+        // 6. ハンバーガーメニューの開閉機能
+        //======================================
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const body = document.querySelector('body');
+        const nav = document.querySelector('header nav');
+
+        if (hamburgerBtn && nav) {
+            hamburgerBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                body.classList.toggle('is-menu-open');
+
+                // ★★★ このブロックを追加！ ★★★
+                // メニューを開いた時に、ヘッダーのスクロール状態をリセットする
+                if (body.classList.contains('is-menu-open')) {
+                    header.classList.remove('is-scrolled');
+                }
+            });
+
+            // ... (以降の、外側をクリックしたら閉じる処理などは変更なし) ...
+
+            // ★★★ この関数を新しく定義！ ★★★
+            function closeMenu() {
+                body.classList.remove('is-menu-open');
+            }
+            
+            // ★★★ メニューの外側をクリックしたら閉じる処理を、新しい関数を使うように変更 ★★★
+            document.addEventListener('click', (e) => {
+                if (body.classList.contains('is-menu-open') && !nav.contains(e.target)) {
+                    closeMenu();
+                }
+            });
+
+            // ★★★ メニュー内のリンクがクリックされたら、メニューを閉じる処理を追加！ ★★★
+            const navLinks = document.querySelectorAll('header nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // スクロールアニメーションの邪魔にならないように、少しだけ待ってから閉じる
+                    setTimeout(closeMenu, 300); // 0.3秒後に閉じる
+                });
+            });
+
+            // メニューの中（リンク以外の場所）をクリックしても閉じないようにする
+            nav.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        }
+
+
+    </script>
+
+</body>
+</html>

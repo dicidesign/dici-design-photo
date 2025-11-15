@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Detail - d'ici design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hannari+Mincho&family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body id="work-detail"> 
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/dici_logo_white.png" alt="d'ici design Logo">
+        </a>
+        <nav>
+            <a href="index.html#works"><span>Works</span></a>
+            <a href="index.html#flow"><span>Flow</span></a>
+            <a href="index.html#price"><span>Price</span></a>
+            <a href="index.html#contact"><span>Contact</span></a>
+        </nav>
+        <button id="hamburger-btn" class="hamburger-btn">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+        </button>
+    </header>
+
+    <div class="container">
+        <div class="image-column">
+            <div class="main-image">
+                <!-- ここにメインで表示する画像 -->
+                <img src="images/food1.png" alt="Work Detail Image" id="main-img-front">
+                <img src="images/food1.png" alt="Work Detail Image" id="main-img-back">
+            </div>
+            <div class="thumbnail-list">
+                <!-- ここにサブ画像（サムネイル）を並べる -->
+                <img src="images/food1.png" alt="Thumbnail 1" class="thumbnail active" loading="lazy">
+                <img src="images/food1-2.png" alt="Thumbnail 2" class="thumbnail" loading="lazy">
+                <img src="images/food1-3.png" alt="Thumbnail 3" class="thumbnail" loading="lazy">
+                <img src="images/food1-4.png" alt="Thumbnail 4" class="thumbnail" loading="lazy">
+            </div>
+        </div>
+        <div class="text-column">
+            <h1>CONCEPT</h1>
+            <p>
+                この一枚を撮影するにあたり、私たちが最も大切にしたのは、被写体そのものが持つ「静かな物語」を捉えることでした。ただ形や色を写すのではなく、その質感、歴史、そして作り手の想いが息づく空気感までをも写真に封じ込めたい。そのために、私たちは自然光が最も美しく回り込む時間帯を選び、余計な光を一切排除しました。<br><br>
+                ライティングは、被写体の輪郭を優しく縁取る一つのキーライトのみ。それにより生じる深い影が、逆に主題の存在感を際立たせ、見る者の想像力をかき立てます。アングルは、まるで私たちが普段の生活の中でふと目に留めたかのような、自然でありながらも計算された視点を探求しました。この写真を見る人が、一瞬でもその場の静けさや温度を感じ取り、その商品の向こう側にあるストーリーに思いを馳せてもらえたなら、これ以上の喜びはありません。
+            </p>
+            <a href="index.html" class="back-link">← Back to Works</a>
+        </div>
+    </div>
+    
+    <script>
+    // =============================================================
+    // ▼▼▼ ここに全作品のデータをまとめる (ここを編集してね！) ▼▼▼
+    // =============================================================
+    const worksData = {
+        "food1": {
+            title: "CONCEPT",
+            description: "今回の撮影では、暗めの背景素材を使うことで、一皿の料理が持つ「物語」にスポットライトを当てています。光源の方向性も強くし、光と影のコントラストを強めることで、食材のフレッシュな色彩やソースの艶やかさが、まるで舞台上の主役のように浮かび上がります。一皿一皿に込められた、シェフの思いをできる限りそのままに伝えられるようひとつひとつの食材の見せ方にも気を使いながら丁寧に撮影しました。",
+            images: [
+                "images/food1.png",
+                "images/food1-2.png",
+                "images/food1-3.png",
+                "images/food1-4.png"
+            ]
+        },
+        "cosme1": {
+            title: "CONCEPT",
+            description: "メーカーが持つオーガニックな世界観を表現するため、「木漏れ日」をライティングで再現することから撮影を始めました。柔らかな自然光を模したライティングによって落ちた影が、穏やかな午後のひとときを切り取ったかのような空気感を演出します。製品のパッケージに落ちる影は、その素材感や使い込まれたチューブの立体感をリアルに伝え、ただ美しいだけでなく、使い手の日常に寄り添うプロダクトであることを表現できるように撮影しています。",
+            images: [
+                "images/cosme1.png"
+            ]
+        },
+        "products1": {
+            title: "CONCEPT",
+            description: "陶芸教室のWEBページ素材用の撮影。今回の写真で伝えたかったのは、単なる「物」としての器ではなく、作り手の気持ちが現れることでその形を変える器の魅力。「こんな器が作れるのなら作ってみたい、、、」見た人が、そんな気持ちになれるような素材撮りを心がけました。光は器の素材感や形状が分かりやすいようにフラットな明かりの下で撮影しています。",
+            images: [
+                "images/products1.png",
+                "images/products1-2.png",
+                "images/products1-3.png"
+            ]
+        },
+        "fashion1": {
+            title: "CONCEPT",
+            description: "アパレルブランドの商品撮影、今回はハンガーに掛けた「吊り」での撮影を選択しました。これにより、服が持つ本来のシルエットやデザインを、歪みなく正確に伝えることができます。ライティングにおいては、まず正面からの光で商品の正確な色味を再現。さらに、サイドからの光を補助的に加えることで、生地の質感や縫製のディテールを立体的に浮かび上がらせています。背景に鮮やかなカラーバックペーパーを用いることで、単なるECサイトの商品写真に留まらない、ブランドイメージを向上させるクリエイティブな一枚に仕上げました。",
+            images: [
+                "images/fashion1.png",
+                "images/fashion1-2.png",
+                "images/fashion1-3.png"
+            ]
+        },
+        "food2": {
+            title: "CONCEPT",
+            description: "今回の会席料理の撮影では、ダークな背景の中で一皿一皿が主役として輝く「舞台照明」のようなライティングを設計しました。特に、寿司や刺身の鮮度感を伝えるため、ネタの表面が艶やかに光る「シズル感」の表現を追求。食材の持つ瑞々しさが一番美しく見える光の角度を探りながら、丁寧に撮影しています。この写真を見た人が、まるでその場で提供されたかのような新鮮さと、これから始まる食事への期待感を感じられるような一枚を目指しました。",
+            images: [
+                "images/food2.png",
+                "images/food2-2.png",
+                "images/food2-3.png",
+                "images/food2-4.png",
+                "images/food2-5.png"
+            ]
+        },
+        "interior1": {
+            title: "CONCEPT",
+            description: "イタリアンレストランの店舗撮影。今回の撮影で最も重視したのは、お店がこだわり抜いて設計した「空間そのものの魅力」を忠実に写し出すことでした。店内の照明が創り出す元々のムーディーな雰囲気を壊さぬよう、撮影プランを設計。その上で、写真としてテーブルや壁の質感が失われないよう、補助的なライティングを緻密に調整し、最低限の光を足しています。訪れる人が過ごすであろう特別な時間を、そのまま切り取ったかのような臨場感ある一枚を目指しました。",
+            images: [
+                "images/interior1.png",
+                "images/interior1-2.png",
+                "images/interior1-3.png"
+            ]
+        },
+        "portrait1": {
+            title: "CONCEPT",
+            description: "ファッションブランドのルックブック撮影。今回の撮影では、服のデザインとモデルの存在感、その両方を最大限に引き出すためのライティングを設計しました。メインには大型のソフトボックスを使用し、被写体全体を包み込むような「柔らかい光」を構築。これにより、衣装の細かな質感や美しいドレープを忠実に再現しています。その上で、あえて影が落ちる方向を緻密にコントロールすることで、平坦になりがちなスタジオ撮影に「しっかりとした立体感」を与え、見る人の印象に残る力強い一枚に仕上げました。",
+            images: [
+                "images/portrait1.png",
+                "images/portrait1-2.png"
+            ]
+        },
+        "cosme2": {
+            title: "CONCEPT",
+            description: "この一枚で表現したのは、商品が肌にもたらす「透明感」というイメージです。背景に置かれたクリアキューブに光を透過させることで、まるで清らかな水の中を光が通り抜けるような、複雑で美しい影を演出。あえて影の部分に焦点を当てることで、「影でさえも透明である」という、製品のクリアなコンセプトを視覚的に伝えています。この写真から、肌が光に満たされるような、心地よい感覚を想像していただければ幸いです。",
+            images: [
+                "images/cosme2.png"
+            ]
+        },
+        "products2": {
+            title: "CONCEPT",
+            description: "ワインレストランの店舗イメージ撮影。ワインを片手に過ごす素敵な時間がすごせるお店です。撮影にあたってはレストラン全体を包む「アンバー（琥珀色）の灯り」を再現することにこだわりました。この温かみのある光は、これから始まるディナーへの期待感を高め、グラスを交わす人々の姿をイメージさせます。背景の無数の光の玉ボケは、まるで街の夜景のよう。写真を見た人が、大切な誰かとこの場所で乾杯する、そんな幸せな瞬間を想像できるような絵作りを心掛けました。",
+            images: [
+                "images/products2.png",
+                "images/products2-2.png"
+            ]
+        },
+        "fashion2": {
+            title: "CONCEPT",
+            description: "アパレル商品のコーディネート提案用イメージ撮影。今回は、お客様がアイテムを組み合わせた際の全体像を直感的に把握できるよう、真上からの「俯瞰」で捉えた平置きの構図を採用しました。ライティングは影を極力作らない「フラットな光」を全体に回すことで、各アイテムの色や質感を忠実に再現。また、背景をピンクとグレーの2色にセパレートすることで、写真にリズムと楽しさを加え、単なる商品紹介に留まらない、ブランドの世界観を伝える一枚に仕上げています。",
+            images: [
+                "images/fashion2.png"
+            ]
+        },
+        "portrait2": {
+            title: "CONCEPT",
+            description: "今回のポートレート撮影では、モデルと衣装が持つ本来の美しさをストレートに伝えるため、背景と小道具を白で統一したミニマルな空間を構成しました。ライティングは、被写体を均一に包み込むような柔らかい光を選択。これにより、肌のトーンを滑らかに、そして衣服の質感を繊細に描写しています。一枚の写真の中で強い主張を生み出すのは、モデルのポージングだけ。視線の向きや手足の角度がわずかに変わるだけで、写真の雰囲気が大きく変化する。そのバリエーションを複数撮影することで、一枚の静止画の中に豊かな物語を生み出しました。",
+            images: [
+                "images/portrait2.png",
+                "images/portrait2-2.png"
+            ]
+        },
+        "interior2": {
+            title: "CONCEPT",
+            description: "シーシャバーの店舗イメージ撮影。撮影にあたり大事にしたのは、扉を開けた瞬間に感じる、別世界への没入感です。店内に灯るランプの光だけを頼りに、この空間が持つ独特の「重厚感」と「温かみ」をそのまま切り取ることに注力しました。鈍く光を反射するレザーソファの質感、レンガの凹凸に落ちる影、そしてシーシャのガラスが放つ妖艶な輝き。それらすべてが、これから始まるリラックスした時間を物語っています。写真から、立ち上る煙の香りや、静かに流れる音楽まで感じ取っていただけるような、五感に響く空間表現を心がけました。",
+            images: [
+                "images/interior2.png",
+                "images/interior2-2.png",
+                "images/interior2-3.png",
+                "images/interior2-4.png",
+                "images/interior2-5.png"
+            ]
+        },
+        "food4": {
+            title: "CONCEPT",
+            description: "カフェのメニュー用スイーツ撮影。今回の撮影で最も重視したのは、お客様がメニューを見て期待する「味」や「食感」を、写真を通して正確に伝えることです。そのため、背景を真っ白に飛ばし、影を極力抑える「ハイキー」なライティングで全体を構成。このフラットで明るい光は、スイーツが持つ本来の色を忠実に再現し、クリームの滑らかさやフルーツの瑞々しさをクリアに写し出します。清潔感と「おいしさ」がストレートに伝わる、誠実な一枚を目指しました。",
+            images: [
+                "images/food4.png",
+                "images/food4-2.png",
+                "images/food4-3.png",
+            ]
+        },
+        "cosme3": {
+            title: "CONCEPT",
+            description: "化粧品のプロダクト撮影。今回のテーマは「静謐（せいひつ）な存在感」です。その表現のため、背景と床には無機質なコンクリート調の素材を選択。そして、まるで窓から硬い光が差し込んだかのような、強い指向性を持つライティングを設計しました。斜めに落ちるくっきりとした影は、空間に奥行きと時間経過を感じさせ、製品のマットな質感やプラスチックの僅かな光沢をリアルに描写します。静かな空間に置かれたプロダクトが、確かな存在感を放つ。そんなミニマルで力強い世界観を一枚の写真に込めました。",
+            images: [
+                "images/cosme3.png"
+            ]
+        },
+        "interior3": {
+            title: "CONCEPT",
+            description: "ハイブランドの店舗竣工写真。この撮影で心掛けたのは、ブランドが世界観のすべてを注ぎ込んだ、この美しい空間をありのままに、そして正確に記録することです。そのため、歪みを抑えるアングルやレンズ等を考慮しながら、垂直・水平が完璧に整った構図を追求しました。ライティングは、店舗に設置された照明デザインを最大限に尊重。商品の素材感やガラスケースの透明感が失われないよう、ガラスへの映り込み等に気をつけながら避け切れないものは画像修正にてフォローしています。映り込みのあるもの、ないもの、それぞれの質感を見極めながら、隅々までクリアに見渡せる一枚に仕上げています。",
+            images: [
+                "images/interior3.png",
+                "images/interior3-2.png",
+                "images/interior3-3.png",
+                "images/interior3-4.png"
+            ]
+        },
+        "interior4": {
+            title: "CONCEPT",
+            description: "レンタルスタジオの空間撮影。今回の撮影で最も重視したのは、このスタジオの最大の魅力である「豊かで美しい自然光」を、写真を見る人にストレートに伝えることでした。そのため、人工的な照明は最小限に抑え、大きな窓から差し込む光が空間全体に柔らかく回り込む時間帯を狙って撮影。白い壁が光を反射することで生まれる、明るく、影の少ないニュートラルな環境は、ポートレートから商品撮影まで、あらゆる用途に対応できるスタジオのポテンシャルを示唆しています。この写真から、クリエイターがここで生み出す無限の可能性を感じていただければ幸いです。",
+            images: [
+                "images/interior4.png",
+                "images/interior4-2.png"
+            ]
+        },
+        "products3": {
+            title: "CONCEPT",
+            description: "高級腕時計のプロダクト撮影。今回の挑戦は、ラグジュアリーの象徴である時計を、あえて自然物である「砂」の上に置くことで、新たな価値観を提示することでした。ライティングで最も注力したのは、金属のケースやブレスレットが持つ硬質な輝きを忠実に再現できるように強めでシャープなライティングです。貴金属やガラスの場合は映り込みを調整することも非常に大事なことです。異質な素材同士が見事に調和した、静謐ながらも力強い一枚に仕上げました。",
+            images: [
+                "images/products3.png"
+            ]
+        },
+        "portrait3": {
+            title: "CONCEPT",
+            description: "今回のポートレート撮影で目指したのは、作り込まれた「表情」ではなく、被写体の内側から自然に滲み出る「感情」を捉えることでした。そのため、モデルには特定のポーズを指示せず、古民家という空間の中で自由に過ごしてもらう時間を大切にしました。障子や縁側から差し込む、柔らかく拡散した自然光だけを光源として使用。この抑制された光が、濡れた髪の質感や、物思いに耽る横顔の陰影を繊細に描き出します。一枚一枚が、ある女性の物語の断片となるよう、見る人の想像力に働きかけるような撮影を心がけました。",
+            images: [
+                "images/portrait3.png",
+                "images/portrait3-2.png",
+                "images/portrait3-3.png",
+                "images/portrait3-4.png"
+            ]
+        },
+        "cosme4": {
+            title: "CONCEPT",
+            description: "ラグジュアリーコスメのプロダクトイメージ撮影。撮影イメージとしては製品が持つ高級感と、ゴールドを基調とした色味を際立たせるという感じで進めました。そのために、ライティングは夕方の柔らかな西日をイメージした「暖色系の光」で設計。意図的に植物の影を落とすことで、単調になりがちな背景に奥行きとストーリー性を与えました。製品のゴールドのキャップやガラスのボトルが光を美しく反射し、その上質な質感を際立たせます。憧れと心地よさが同居する、ブランドの世界観を一枚の写真に凝縮しました。",
+            images: [
+                "images/cosme4.png"
+            ]
+        },
+        "products4": {
+            title: "CONCEPT",
+            description: "ぬいぐるみのECサイト用商品撮影。今回の撮影で最も重視したのは、お客様が画面越しでも「触り心地」を想像できるような、素材感のリアルな表現です。そのために、影が強く出すぎない、柔らかく拡散した「フラットな光」でライティングを全体に構成。これにより、ぬいぐるみが持つ本来の色を正確に再現しつつ、毛のふわふわとした質感や、編みぐるみの繊細な編み目の一つ一つまで、ディテールを潰すことなく鮮明に写し出しました。背景を完全に白で統一することで、切り抜き画像にも対応しやすく、使い回ししやすい形の商品撮影です。",
+            images: [
+                "images/products4.png",
+                "images/products4_2.png"
+            ]
+        },
+        "fashion3": {
+            title: "CONCEPT",
+            description: "この一枚で表現したのは、単なるアイテムの羅列ではなく、「ある人物のライフスタイル」そのものです。背景に温かみのあるウッド素材を選ぶことで、写真全体にナチュラルでリラックスした雰囲気を付与。ライティングは、木の質感を際立たせるため、少し硬めの光をサイドから当てています。デニムの色落ちやレザーの光沢、麦わら帽子の編み目といった、各アイテムが持つ素材感をディテールまで丁寧に描写。見る人が、この写真の持ち主の人物像や、その日の出来事を自由に想像できるような、イメージ豊かな一枚に仕上げました。",
+            images: [
+                "images/fashion3.png"
+            ]
+        },
+        "fashion4": {
+            title: "CONCEPT",
+            description: "アパレルブランドのイメージ撮影。今回のテーマは「シンプルであることの美しさ」です。素材の良さを表現するためハイライトを立てつつも全体的に柔らかな光を回しています。私たちは。生地の質感や一枚一枚が作る自然な陰影を際立たせ、無機質な工業製品ではない、「人の体温」を感じさせるプロダクトであることを表現しました。これは、Tシャツという最もシンプルな衣服への、私たちなりの敬意（オマージュ）です。",
+            images: [
+                "images/fashion4.png",
+                "images/fashion4-2.png"
+            ]
+        },
+        "portrait4": {
+            title: "CONCEPT",
+            description: "舞台写真の撮影は、常に一回きりの真剣勝負です。二度と同じ瞬間は訪れない緊張感の中、私たちは役者の表情、照明の色、そして空間全体の構成を瞬時に判断し、その舞台が持つ物語の核心を切り取ります。今回の作品では、撮影した写真にタイポグラフィを組み合わせることで、グラフィックデザインの領域まで踏み込みました。写真が持つ「情緒」と、文字が持つ「情報」。この二つを融合させることで、観客が劇場に足を運ぶ前から、その舞台の物語が始まるような、喚起力のあるビジュアルを目指しました。",
+            images: [
+                "images/portrait4.png"
+            ]
+        }
+        // ... 他の作品データ (food2, cosme2 など) も、この形式で追加していく
+    };
+    // =============================================================
+    // ▲▲▲ データはここまで ▲▲▲
+    // =============================================================
+
+
+    // --- ここから下は、自動でページを生成するロジック (編集不要) ---
+    document.addEventListener('DOMContentLoaded', () => {
+    // 1. URLから作品IDを取得
+    const params = new URLSearchParams(window.location.search);
+    let workId = params.get('id');
+
+    if (workId && workId.endsWith('.png')) {
+        workId = workId.slice(0, -4);
+    }
+
+    // 2. IDに対応する作品データを取得
+    const data = worksData[workId] || worksData['food1']; // 見つからなければfood1を表示
+    
+    if (!data) {
+        console.error('作品データが見つかりません。');
+        return;
+    }
+
+    // 3. HTML要素を取得 (★ mainImageの取得方法を変更)
+    const mainImageContainer = document.querySelector('.main-image'); 
+    const mainImageFront = document.getElementById('main-img-front');
+    const mainImageBack = document.getElementById('main-img-back');
+    const thumbnailList = document.querySelector('.thumbnail-list');
+    const titleElement = document.querySelector('.text-column h1');
+    const descriptionElement = document.querySelector('.text-column p');
+
+    /**
+     * 指定された画像が読み込まれた後に、メイン画像の高さを調整する関数
+     * @param {string} imageUrl - 読み込む画像のURL
+     */
+    function adjustMainImageHeight(imageUrl) {
+        const tempImg = new Image();
+        tempImg.onload = () => {
+            // 画像の比率を計算 (高さ / 幅)
+            const aspectRatio = tempImg.height / tempImg.width;
+            // コンテナの現在の幅に基づいて、正しい高さを計算
+            const containerWidth = mainImageContainer.offsetWidth;
+            const newHeight = containerWidth * aspectRatio;
+            // コンテナの高さを設定する
+            mainImageContainer.style.height = `${newHeight}px`;
+        };
+        tempImg.src = imageUrl;
+    }
+
+    // 4. データを使ってHTMLの中身を書き換える
+    titleElement.textContent = data.title;
+    descriptionElement.innerHTML = data.description.replace(/\n/g, '<br>');
+    
+    // 5. 画像とサムネイルを生成
+    if (data.images && data.images.length > 0) {
+        const firstImageUrl = data.images[0];
+        
+        // 最初の画像の読み込みが終わってから、高さを設定
+        adjustMainImageHeight(firstImageUrl);
+        
+        mainImageFront.src = firstImageUrl;
+        mainImageBack.src = firstImageUrl;
+        
+        thumbnailList.innerHTML = '';
+        
+        data.images.forEach((imgSrc, index) => {
+            const img = document.createElement('img');
+            img.src = imgSrc;
+            img.alt = `Thumbnail ${index + 1}`;
+            img.classList.add('thumbnail');
+            if (index === 0) {
+                img.classList.add('active');
+            }
+            thumbnailList.appendChild(img);
+        });
+    }
+    
+    // 6. サムネイルのクリックイベントを再設定
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    let isFading = false;
+    
+    // ★★★ どっちが前面かを記憶する変数 ★★★
+    let currentFront = mainImageFront;
+    let currentBack = mainImageBack;
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', () => {
+            if (isFading || currentFront.src.endsWith(thumbnail.src.split('/').pop())) {
+                return;
+            }
+            isFading = true;
+
+            adjustMainImageHeight(thumbnail.src);
+            
+            // 1. 背面の画像に、次に表示したい画像を設定
+            currentBack.src = thumbnail.src;
+
+            // 2. 前面の画像をフワッと透明にする
+            currentFront.style.opacity = '0';
+            
+            // 3. 背面の画像をフワッと表示させる
+            currentBack.style.opacity = '1';
+            
+            // ★★★ アニメーションが終わったら、役割を交代する ★★★
+            setTimeout(() => {
+                // 今回、前面だったものが、次のための背面に変わる
+                let temp = currentFront;
+                currentFront = currentBack;
+                currentBack = temp;
+
+                isFading = false;
+            }, 650); 
+            
+            document.querySelector('.thumbnail.active')?.classList.remove('active');
+            thumbnail.classList.add('active');
+        });
+    });
+
+    // ★ ウィンドウサイズが変わった時も、高さを再計算する
+    window.addEventListener('resize', () => {
+        adjustMainImageHeight(mainImageFront.src);
+    });
+
+    //======================================
+    // 5. ヘッダーのスクロール変化機能
+    //======================================
+    const header = document.querySelector('header');
+    if (header) {
+        window.addEventListener('scroll', () => {
+            // ★★★ この一行を追加！ ★★★
+            // メニューが開いている間は、この処理を何もしない
+            if (document.body.classList.contains('is-menu-open')) return;
+
+            if (window.scrollY > 10) {
+                header.classList.add('is-scrolled');
+            } else {
+                header.classList.remove('is-scrolled');
+            }
+        });
+    }
+
+    //======================================
+    // 6. ハンバーガーメニューの開閉機能
+    //======================================
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const body = document.querySelector('body');
+    const nav = document.querySelector('header nav');
+
+    if (hamburgerBtn && nav) {
+        hamburgerBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            body.classList.toggle('is-menu-open');
+
+            // ★★★ このブロックを追加！ ★★★
+            // メニューを開いた時に、ヘッダーのスクロール状態をリセットする
+            if (body.classList.contains('is-menu-open')) {
+                header.classList.remove('is-scrolled');
+            }
+        });
+
+        // ... (以降の、外側をクリックしたら閉じる処理などは変更なし) ...
+
+        // ★★★ この関数を新しく定義！ ★★★
+        function closeMenu() {
+            body.classList.remove('is-menu-open');
+        }
+        
+        // ★★★ メニューの外側をクリックしたら閉じる処理を、新しい関数を使うように変更 ★★★
+        document.addEventListener('click', (e) => {
+            if (body.classList.contains('is-menu-open') && !nav.contains(e.target)) {
+                closeMenu();
+            }
+        });
+
+        // ★★★ メニュー内のリンクがクリックされたら、メニューを閉じる処理を追加！ ★★★
+        const navLinks = document.querySelectorAll('header nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // スクロールアニメーションの邪魔にならないように、少しだけ待ってから閉じる
+                setTimeout(closeMenu, 300); // 0.3秒後に閉じる
+            });
+        });
+
+        // メニューの中（リンク以外の場所）をクリックしても閉じないようにする
+        nav.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+    }
+    // ★★★ back to works ボタンを押した時の処理 ★★★
+    const backLink = document.querySelector('.back-link');
+    if (backLink) {
+        backLink.addEventListener('click', (e) => {
+            // デフォルトのページ遷移をキャンセル
+            e.preventDefault();
+            
+            // ★★★ ブラウザの「戻る」機能を呼び出すだけ！ ★★★
+            history.back();
+        });
+    }
+});
+</script>
+</body>
+</html>

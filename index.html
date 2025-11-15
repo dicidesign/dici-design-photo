@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hannari+Mincho&family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>d'ici design - Demo</title>
+</head>
+
+<body> 
+
+    <div class="page-frame"></div>
+    <!-- ★★★【新設】追従サイドリンク ★★★ -->
+    <div class="side-contact-links">
+        <a href="https://lin.ee/i8Zhdgr" class="side-link line-link">
+        <img src="images/line_icon.png" alt="LINEで問い合わせ">
+        <span>LINEで<br>お問い合わせ</span>
+        </a>
+        <a href="#contact" class="side-link">
+            <img src="images/mail_icon.png" alt="メールで問い合わせ">
+            <span>Mailで<br>お問い合わせ</span>
+        </a>
+    </div>
+    <div class="hero-video-wrapper">
+        <video class="hero-video" src="images/top.mp4" autoplay loop muted playsinline></video>
+    </div>
+
+    <div class="page-content">
+        <header>
+             <a href="index.html" class="logo">
+                <img src="images/dici_logo_white.png" alt="d'ici design Logo">
+            </a>
+            <nav>
+                <a href="#works"><span>Works</span></a>
+                <a href="#flow"><span>Flow</span></a>
+                <a href="#price"><span>Price</span></a>
+                <a href="#contact"><span>Contact</span></a>
+            </nav>
+            <!-- ★★★ このハンバーガーメニューを追加！ ★★★ -->
+            <button id="hamburger-btn" class="hamburger-btn">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+            </button>
+        </header>
+
+        <section class="hero">
+            <div class="concept-text">
+                <div class="concept-text-inner">
+                    <div class="concept-line">
+                        <!-- preタグを削除して、divに変更 -->
+                        <div class="en">Is the true value of your product being conveyed<span class="br-sp"><br></span>correctly in photos?</div>
+                        <div class="ja sub-copy">その商品の本当の価値、<span class="br-sp"><br></span>写真で正しく伝わっていますか？</div>
+                    </div>
+                    <div class="concept-line">
+                        <div class="en">We translate your passion and commitment<span class="br-sp"><br></span>into the 'language of light'.</div>
+                        <div class="ja sub-copy">私たちは、あなたの情熱とこだわりを<span class="br-sp"><br></span>「光の言葉」に翻訳します。</div>
+                    </div>
+                    <div class="concept-line main">
+                        <div class="en">Multiplying the charm of your product<span class="br-sp"><br></span>with light and angles.</div>
+                        <div class="ja main-copy">光とアングルで、<span class="br-sp"><br></span>商品の魅力を何倍にも。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="works">
+            <div class="section-header">
+                <h2>Works</h2>
+                <p>d'ici designの視点と技術が詰まった、<span class="br-sp"><br></span>作例の一部をご紹介します。</p>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="food">FOOD</button>
+                <button class="filter-btn" data-filter="cosmetics">COSMETICS</button>
+                <button class="filter-btn" data-filter="products">PRODUCTS</button>
+                <button class="filter-btn" data-filter="interior">INTERIOR</button>
+                <button class="filter-btn" data-filter="fashion">FASHION</button>
+                <button class="filter-btn" data-filter="portrait">PORTRAIT</button>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item fade-in is-portrait" data-category="food"><a href="work-detail.html?id=food1"><img src="images/food1.png" alt="Food"></a></div>
+                <div class="gallery-item fade-in is-portrait" data-category="cosmetics"><a href="work-detail.html?id=cosme1"><img src="images/cosme1.png" alt="Cosmetics"></a></div>
+                <div class="gallery-item fade-in" data-category="products"><a href="work-detail.html?id=products1"><img src="images/products1.png" alt="Products"></a></div>
+                <div class="gallery-item fade-in" data-category="fashion"><a href="work-detail.html?id=fashion1"><img src="images/fashion1.png" alt="Fashion"></a></div>
+                <div class="gallery-item fade-in is-portrait" data-category="food"><a href="work-detail.html?id=food2"><img src="images/food2.png" alt="Food"></a></div>
+                <div class="gallery-item fade-in is-portrait" data-category="interior"><a href="work-detail.html?id=interior1"><img src="images/interior1.png" alt="Interior"></a></div>
+                <div class="gallery-item fade-in" data-category="portrait"><a href="work-detail.html?id=portrait1"><img src="images/portrait1.png" alt="Portrait"></a></div>
+                <div class="gallery-item fade-in is-portrait" data-category="cosmetics"><a href="work-detail.html?id=cosme2"><img src="images/cosme2.png" alt="Cosmetics"></a></div>
+                <div class="gallery-item fade-in" data-category="products"><a href="work-detail.html?id=products2"><img src="images/products2.png" alt="Products"></a></div>
+                <div class="gallery-item fade-in" data-category="fashion"><a href="work-detail.html?id=fashion2"><img src="images/fashion2.png" alt="Fashion"></a></div>
+                <div class="gallery-item fade-in" data-category="portrait"><a href="work-detail.html?id=portrait2"><img src="images/portrait2.png" alt="Portrait"></a></div>
+                <div class="gallery-item fade-in" data-category="interior"><a href="work-detail.html?id=interior2"><img src="images/interior2.png" alt="Interior"></a></div>
+                <div class="gallery-item fade-in is-portrait" data-category="food"><a href="work-detail.html?id=food4"><img src="images/food4.png" alt="Food"></a></div>
+                <div class="gallery-item fade-in is-portrait" data-category="cosmetics"><a href="work-detail.html?id=cosme3"><img src="images/cosme3.png" alt="Cosmetics"></a></div>
+                <div class="gallery-item fade-in" data-category="interior"><a href="work-detail.html?id=interior3"><img src="images/interior3.png" alt="Interior"></a></div>
+                <div class="gallery-item fade-in" data-category="interior"><a href="work-detail.html?id=interior4"><img src="images/interior4.png" alt="Interior"></a></div>
+                <div class="gallery-item fade-in" data-category="products"><a href="work-detail.html?id=products3"><img src="images/products3.png" alt="Products"></a></div>
+                <div class="gallery-item fade-in" data-category="portrait"><a href="work-detail.html?id=portrait3"><img src="images/portrait3.png" alt="Portrait"></a></div>
+                <div class="gallery-item fade-in" data-category="cosmetics"><a href="work-detail.html?id=cosme4"><img src="images/cosme4.png" alt="Cosmetics"></a></div>
+                <div class="gallery-item fade-in" data-category="products"><a href="work-detail.html?id=products4"><img src="images/products4.png" alt="Products"></a></div>
+                <div class="gallery-item fade-in" data-category="fashion"><a href="work-detail.html?id=fashion3"><img src="images/fashion3.png" alt="Fashion"></a></div>
+                <div class="gallery-item fade-in" data-category="fashion"><a href="work-detail.html?id=fashion4"><img src="images/fashion4.png" alt="Fashion"></a></div>
+                <div class="gallery-item fade-in" data-category="portrait"><a href="work-detail.html?id=portrait4"><img src="images/portrait4.png" alt="Portrait"></a></div>
+            </div>
+        </section>
+        <!-- <section id="flow"> の中身を以下に差し替え -->
+
+<!-- ▼▼▼ FlowセクションのHTMLをこれに差し替え ▼▼▼ -->
+<section id="flow" class="flow">
+    <div class="section-header">
+        <h2>Flow</h2>
+        <p>お問い合わせから納品までの流れ</p>
+    </div>
+
+    <!-- スポットライトと数字とスクロールエリアのコンテナ -->
+    <div class="flow-scroll-wrapper">
+        <!-- ★★★【新設】スクロールを促すヒント ★★★ -->
+        <div id="scroll-hint">
+            <div class="mouse-icon">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+        <div id="flow-number-display" class="flow-number-display">01</div>
+        <div id="flow-scroll-area" class="flow-scroll-area">
+            <div class="scroll-padding-top"></div>
+            <div class="flow-step" data-step="01">
+                <div class="flow-content">
+                    <h3>Contact</h3>
+                    <p>まずはお問い合わせフォームより、<span class="br-sp"><br></span>お気軽にご連絡ください。</p>
+                </div>
+            </div>
+            <div class="flow-step" data-step="02">
+                <div class="flow-content">
+                    <h3>Hearing & Quote</h3>
+                    <p>撮影内容の詳細をヒアリングし、<span class="br-sp"><br></span>お見積もりを提出します。</p>
+                </div>
+            </div>
+            <div class="flow-step" data-step="03">
+                <div class="flow-content">
+                    <h3>Shooting Plan</h3>
+                    <p>撮影のコンセプトやスケジュールなど、<span class="br-sp"><br></span>詳細な計画を立てます。</p>
+                </div>
+            </div>
+            <div class="flow-step" data-step="04">
+                <div class="flow-content">
+                    <h3>Shooting</h3>
+                    <p>プラン確定後、ヒアリングに基づき<span class="br-sp"><br></span>撮影を開始します。</p>
+                </div>
+            </div>
+            <div class="flow-step" data-step="05">
+                <div class="flow-content">
+                    <h3>Photo Selection</h3>
+                    <p>撮影した写真の中から、<span class="br-sp"><br></span>ベストショットをセレクトします。</p>
+                </div>
+            </div>
+            <div class="flow-step" data-step="06">
+                <div class="flow-content">
+                    <h3>Retouching</h3>
+                    <p>色味や質感を調整し、<span class="br-sp"><br></span>写真の魅力を最大限に引き出します。</p>
+                </div>
+            </div>
+            <div class="flow-step" data-step="07">
+                <div class="flow-content">
+                    <h3>Delivery</h3>
+                    <p>完成したデータを、ご希望の形式で<span class="br-sp"><br></span>納品いたします。</p>
+                </div>
+            </div>
+            <div class="flow-step" data-step="08">
+                <div class="flow-content">
+                    <h3>Payment</h3>
+                    <p>納品後、請求書を発行いたしますので、<span class="br-sp"><br></span>お支払いをお願いします。</p>
+                </div>
+            </div>
+            <div class="scroll-padding-bottom"></div>
+        </div>
+    </div>
+
+    <!-- ★★★【新設】スクロールインジケーター★★★ -->
+    <div class="flow-indicator">
+        <span class="indicator-dot active" data-indicator="01">01</span>
+        <span class="indicator-dot" data-indicator="02">02</span>
+        <span class="indicator-dot" data-indicator="03">03</span>
+        <span class="indicator-dot" data-indicator="04">04</span>
+        <span class="indicator-dot" data-indicator="05">05</span>
+        <span class="indicator-dot" data-indicator="06">06</span>
+        <span class="indicator-dot" data-indicator="07">07</span>
+        <span class="indicator-dot" data-indicator="08">08</span>
+    </div>
+     
+
+
+</section>
+<!-- ▲▲▲ ここまでFLOW SECTION ▲▲▲ -->
+
+
+<!-- ▼▼▼ ここからがPRICE. SECTION ▼▼▼ -->
+<!-- ▼▼▼ 既存のPriceセクションを、この2列構成バージョンに丸ごと差し替えてください ▼▼▼ -->
+<section id="price" class="price">
+    <div class="section-header">
+        <h2 class="price-h2">Price</h2>
+        <p id="price-h2-p">撮影料金のご案内</p>
+    </div>
+
+    <!-- ★ 2列構成のコンテナ -->
+    <div class="price-container">
+
+        <!-- ▼ 左の列：商品撮影プラン ▼ -->
+        <div class="price-category">
+            <h3>商品撮影プラン</h3>
+            <div class="price-list">
+
+                <div class="price-item">
+                    <div class="price-image-wrapper">
+                        <img src="images/whitebg.png" alt="商品写真(白背景)の作例" loading="lazy">
+                    </div>
+                    <div class="price-details">
+                        <span class="service-name">商品写真 (白背景)</span>
+                        <span class="service-price">1点 ¥3,000〜</span>
+                    </div>
+                </div>
+
+                <div class="price-item">
+                    <div class="price-image-wrapper">
+                        <img src="images/cosme_price.png" alt="商品写真(イメージ)の作例" loading="lazy">
+                    </div>
+                    <div class="price-details">
+                        <span class="service-name">商品写真 (イメージ)</span>
+                        <span class="service-price">1点 ¥4,000〜</span>
+                    </div>
+                </div>
+
+                <div class="price-item">
+                    <div class="price-image-wrapper">
+                        <img src="images/kirinuki.png" alt="商品写真(切り抜き)の作例" loading="lazy">
+                    </div>
+                    <div class="price-details">
+                        <span class="service-name">商品写真 (切り抜き)</span>
+                        <span class="service-price">1点 ¥4,000〜</span>
+                    </div>
+                </div>
+
+                <div class="price-item">
+                    <div class="price-image-wrapper">
+                        <img src="images/kirikage.png" alt="商品写真(切り抜き&影追加)の作例" loading="lazy">
+                    </div>
+                    <div class="price-details">
+                        <span class="service-name">商品写真 (切り抜き影)</span>
+                        <span class="service-price">1点 ¥4,500〜</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ▼ 右の列：出張撮影プラン ▼ -->
+        <div class="price-category">
+            <h3>出張撮影プラン</h3>
+            <div class="price-list">
+                
+                <div class="price-item">
+                    <div class="price-image-wrapper">
+                        <img src="images/portrait1_price.png" alt="ポートレートの作例" loading="lazy">
+                    </div>
+                    <div class="price-details">
+                        <span class="service-name">ポートレート</span>
+                        <span class="service-price">1cut ¥4,000〜</span>
+                    </div>
+                </div>
+
+                <div class="price-item">
+                    <div class="price-image-wrapper">
+                        <img src="images/interior2.jpg" alt="店舗撮影の作例" loading="lazy">
+                    </div>
+                    <div class="price-details">
+                        <span class="service-name">店舗撮影 (20cut内)</span>
+                        <span class="service-price">¥30,000〜</span>
+                    </div>
+                </div>
+
+                <div class="price-item">
+                    <div class="price-image-wrapper">
+                        <img src="images/753.jpg" alt="家族写真・七五三の作例" loading="lazy">
+                    </div>
+                    <div class="price-details">
+                        <span class="service-name">家族写真・七五三</span>
+                        <span class="service-price">¥30,000〜</span>
+                    </div>
+                </div>
+
+                <div class="price-item">
+                    <div class="price-image-wrapper">
+                        <img src="images/page57-58.jpg" alt="ウエディング前撮りの作例" loading="lazy">
+                    </div>
+                    <div class="price-details">
+                        <span class="service-name">ウエディング前撮り</span>
+                        <span class="service-price">¥50,000〜</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div> 
+    <section class="faq">
+        <div class="section-header">
+            <h2>Q & A</h2>
+            <p>よくあるご質問</p>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Q.</span> 商品撮影の料金が「〜」となっているのはなぜですか？
+                </button>
+                <div class="accordion-content">
+                     <div class="content-inner">
+                        <p>
+                            <span>A.</span> 商品の大きさ、素材（反射物など）、撮影カット数、1カット内の商品点数などによって、撮影の難易度や必要な時間が変動するためです。カット数が増えるほど1点あたりの単価はお安くなりますので、まずはお気軽にご相談ください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Q.</span> イメージ写真の「小道具代」とは何ですか？
+                </button>
+                <div class="accordion-content">
+                     <div class="content-inner">
+                        <p>
+                            <span>A.</span> 商品の世界観を演出するために使用する背景や小物などの購入・レンタル費用です。どのような小道具を使用するかは、コンセプト設計の段階でお客様とご相談の上、決定いたします。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Q.</span> 出張撮影の「交通費」はどのくらいかかりますか？
+                </button>
+                <div class="accordion-content">
+                     <div class="content-inner">
+                        <p>
+                            <span>A.</span> 撮影場所に応じて変動いたします。お見積もり時に、手数料と合わせて明確に提示させていただきますのでご安心ください。撮影時間やスケジュールについても、この段階で詳細をご相談させていただきます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Q.</span> 人物撮影の衣装やヘアメイクはどうすれば良いですか？
+                </button>
+                <div class="accordion-content">
+                     <div class="content-inner">
+                        <p>
+                            <span>A.</span> 衣装はお客様ご自身でご用意いただいております。ヘアメイクについては、必要であればこちらでプロのスタイリストを手配することも可能です（別途料金）。納品カット数は100カット以上が目安となります。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section id="contact"  class="contact">
+    <div class="section-header">
+        <h2>Contact</h2>
+        <p>撮影に関するご相談・お見積もりなど、<span class="br-sp"><br></span>お気軽にお問い合わせください。</p>
+    </div>
+
+    <!-- ★★★ ここからがNetlify Formの魔法 ★★★ -->
+    <form name="contact" method="POST" data-netlify="true" class="contact-form">
+        
+        <div class="form-group">
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">お問い合わせ内容</label>
+            <textarea id="message" name="message" rows="8" required></textarea>
+        </div>
+
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="quote" name="quote" value="yes">
+            <label for="quote">お見積もりを希望する</label>
+        </div>
+
+        <div class="form-submit">
+            <button type="submit">送信する</button>
+        </div>
+    </form>
+    
+</section>
+<footer id="contact" class="footer">
+    <div class="footer-container">
+        <!-- 左側のナビゲーション -->
+        <nav class="footer-nav">
+            <a href="#works">Works</a>
+            <a href="#flow">Flow</a>
+            <a href="#price">Price</a>
+            <a href="#contact">Contact</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="tokushoho.html">Legal Notice</a>
+        </nav>
+
+        <!-- 中央下のロゴとコピーライト -->
+        <div class="footer-bottom">
+            <a href="index.html" class="footer-logo">
+                <img src="images/dici_logo_white.png" alt="d'ici design Logo">
+            </a>
+            <p class="copyright">&copy; 2025 d'ici design. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ★★★ ここまで ★★★ -->
+<!-- ★★★ ここまで ★★★ -->
+
+
+<!--//==========================================================================
+    / JAVA SCRIPT
+ //===========================================================================----->    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+
+            //======================================
+            // 1. トップテキストのアニメーション
+            //======================================
+            document.querySelectorAll('.concept-line .en, .concept-line .ja').forEach(textElement => {
+                // textElement の子ノード（テキストや <br> タグ）をループ処理
+                const nodes = Array.from(textElement.childNodes);
+                textElement.innerHTML = ''; // 一旦空にする
+
+                nodes.forEach(node => {
+                    // もし、ノードがただのテキストだったら
+                    if (node.nodeType === Node.TEXT_NODE) {
+                        const text = node.textContent;
+                        // テキストを一文字ずつ<span>で囲む
+                        text.split('').forEach(char => {
+                            const span = document.createElement('span');
+                            span.className = 'char';
+                            span.innerHTML = (char === ' ') ? '&nbsp;' : char; // スペースもspanで囲む
+                            textElement.appendChild(span);
+                        });
+                    } 
+                    // もし、ノードがHTML要素（<br>や<span>）だったら
+                    else {
+                        // その要素をそのまま元に戻す
+                        textElement.appendChild(node.cloneNode(true));
+                    }
+                });
+            });
+
+            function animateText(selector) {
+                return new Promise(resolve => {
+                    const chars = document.querySelectorAll(selector);
+                    if (chars.length === 0) { resolve(); return; }
+                    chars.forEach((span, i) => { setTimeout(() => { span.style.opacity = '1'; span.style.transform = 'translateY(0)'; }, i * 40); });
+                    setTimeout(resolve, chars.length * 40 + 200);
+                });
+            }
+
+            async function runAnimationSequence() {
+                // 1行目の英語と日本語を "同時に" アニメーション開始し、両方終わるのを待つ
+                await Promise.all([
+                    animateText('.concept-line:nth-child(1) .en .char'),
+                    animateText('.concept-line:nth-child(1) .ja .char')
+                ]);
+
+                // 2行目の英語と日本語を "同時に" アニメーション開始し、両方終わるのを待つ
+                await Promise.all([
+                    animateText('.concept-line:nth-child(2) .en .char'),
+                    animateText('.concept-line:nth-child(2) .ja .char')
+                ]);
+
+                // 3行目の英語と日本語を "同時に" アニメーション開始し、両方終わるのを待つ
+                await Promise.all([
+                    animateText('.concept-line:nth-child(3) .en .char'),
+                    animateText('.concept-line:nth-child(3) .ja .char')
+                ]);
+            }
+            
+            setTimeout(runAnimationSequence, 500);
+
+
+            //======================================
+            // 2. Worksギャラリーのフィルタリング機能
+            //======================================
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            if(filterButtons.length > 0) {
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        document.querySelector('.filter-btn.active').classList.remove('active');
+                        button.classList.add('active');
+                        const filter = button.dataset.filter;
+                        galleryItems.forEach(item => {
+                            item.style.display = (filter === 'all' || item.dataset.category === filter) ? 'block' : 'none';
+                        });
+                    });
+                });
+            }
+
+
+            //======================================
+            // 3. 要素のスクロールフェードイン機能
+            //======================================
+            const fadeInItems = document.querySelectorAll('.fade-in');
+            if(fadeInItems.length > 0) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                fadeInItems.forEach(item => observer.observe(item));
+            }
+
+
+          // ▼▼▼ FlowセクションのJavaScriptを、これに丸ごと差し戻す！ ▼▼▼
+            const flowScrollArea = document.getElementById('flow-scroll-area');
+            const flowNumberDisplay = document.getElementById('flow-number-display');
+            const flowSteps = document.querySelectorAll('.flow-step');
+            const indicatorDots = document.querySelectorAll('.indicator-dot');
+
+            if (flowScrollArea && flowNumberDisplay && flowSteps.length > 0) {
+                let currentStep = '';
+                let isUpdating = false;
+                let scrollTimeout; // スクロール停止検知用のタイマー
+
+                function setActiveStep() {
+                    const scrollAreaRect = flowScrollArea.getBoundingClientRect();
+                    const scrollAreaCenterY = scrollAreaRect.top + (scrollAreaRect.height / 2);
+
+                    let activeStep = null;
+                    let minDistance = Infinity;
+
+                    flowSteps.forEach(step => {
+                        const stepRect = step.getBoundingClientRect();
+                        const stepCenterY = stepRect.top + (stepRect.height / 2);
+                        const distance = Math.abs(scrollAreaCenterY - stepCenterY);
+                        
+                        if (distance < minDistance) {
+                            minDistance = distance;
+                            activeStep = step;
+                        }
+                    });
+                    
+                    if (activeStep && activeStep.dataset.step !== currentStep) {
+                        updateActiveElements(activeStep.dataset.step);
+                    }
+                }
+                
+                function updateActiveElements(targetStepNumber) {
+                    if (isUpdating) return;
+                    isUpdating = true;
+                    
+                    currentStep = targetStepNumber;
+
+                    flowSteps.forEach(s => s.classList.remove('active'));
+                    indicatorDots.forEach(d => d.classList.remove('active'));
+
+                    const activeStepElement = document.querySelector(`.flow-step[data-step="${currentStep}"]`);
+                    const activeIndicator = document.querySelector(`.indicator-dot[data-indicator="${currentStep}"]`);
+                    
+                    if(activeStepElement) activeStepElement.classList.add('active');
+                    if(activeIndicator) activeIndicator.classList.add('active');
+                    
+                    flowNumberDisplay.classList.add('is-fading');
+                    setTimeout(() => {
+                        flowNumberDisplay.textContent = currentStep;
+                        flowNumberDisplay.classList.remove('is-fading');
+                        isUpdating = false;
+                    }, 400);
+                }
+                
+                flowScrollArea.addEventListener('scroll', () => {
+                    clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(setActiveStep, 10);
+                });
+
+                indicatorDots.forEach(dot => {
+                    dot.addEventListener('click', () => {
+                        const targetStepNumber = dot.dataset.indicator;
+                        const targetStepElement = document.querySelector(`.flow-step[data-step="${targetStepNumber}"]`);
+                        
+                        if (targetStepElement) {
+                            const targetPosition = targetStepElement.offsetTop - (flowScrollArea.offsetHeight / 2) + (targetStepElement.offsetHeight / 2);
+                            flowScrollArea.scrollTo({
+                                top: targetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+
+
+                //======================================
+                // 4. サイドアイコンの色切り替え機能
+                //======================================
+                const sideLinks = document.querySelector('.side-contact-links');
+                const priceSection = document.getElementById('price');
+                const header = document.querySelector('header'); // ★★★ ヘッダー要素を取得 ★★★
+
+                if (sideLinks && priceSection && header) { // ★ headerもチェック対象に追加
+                        const iconObserver = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    // Priceセクションが画面に入ってきたら、両方にクラスを追加
+                                    sideLinks.classList.add('is-on-light-bg');
+                                    header.classList.add('is-on-light-bg'); // ★★★ この行を追加 ★★★
+                                } else {
+                                    // Priceセクションが画面から出たら、両方からクラスを削除
+                                    sideLinks.classList.remove('is-on-light-bg');
+                                    header.classList.remove('is-on-light-bg'); // ★★★ この行を追加 ★★★
+                                }
+                            });
+                        }, { 
+                            threshold: 0.1
+                        });
+
+                        iconObserver.observe(priceSection);
+                    }
+
+
+
+
+                    // 初期表示時に最初のステップをアクティブにする
+                    setActiveStep();
+                } 
+
+
+                //======================================
+                // 5. ヘッダーのスクロール変化機能
+                //======================================
+                const header = document.querySelector('header');
+                if (header) {
+                    window.addEventListener('scroll', () => {
+                        // ★★★ この一行を追加！ ★★★
+                        // メニューが開いている間は、この処理を何もしない
+                        if (document.body.classList.contains('is-menu-open')) return;
+
+                        if (window.scrollY > 10) {
+                            header.classList.add('is-scrolled');
+                        } else {
+                            header.classList.remove('is-scrolled');
+                        }
+                    });
+                }
+
+                //======================================
+                // 6. ハンバーガーメニューの開閉機能
+                //======================================
+                const hamburgerBtn = document.getElementById('hamburger-btn');
+                const body = document.querySelector('body');
+                const nav = document.querySelector('header nav');
+
+                if (hamburgerBtn && nav) {
+                    hamburgerBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        body.classList.toggle('is-menu-open');
+
+                        // ★★★ このブロックを追加！ ★★★
+                        // メニューを開いた時に、ヘッダーのスクロール状態をリセットする
+                        if (body.classList.contains('is-menu-open')) {
+                            header.classList.remove('is-scrolled');
+                        }
+                    });
+
+                    // ... (以降の、外側をクリックしたら閉じる処理などは変更なし) ...
+
+                    // ★★★ この関数を新しく定義！ ★★★
+                    function closeMenu() {
+                        body.classList.remove('is-menu-open');
+                    }
+                    
+                    // ★★★ メニューの外側をクリックしたら閉じる処理を、新しい関数を使うように変更 ★★★
+                    document.addEventListener('click', (e) => {
+                        if (body.classList.contains('is-menu-open') && !nav.contains(e.target)) {
+                            closeMenu();
+                        }
+                    });
+
+                    // ★★★ メニュー内のリンクがクリックされたら、メニューを閉じる処理を追加！ ★★★
+                    const navLinks = document.querySelectorAll('header nav a');
+                    navLinks.forEach(link => {
+                        link.addEventListener('click', () => {
+                            // スクロールアニメーションの邪魔にならないように、少しだけ待ってから閉じる
+                            setTimeout(closeMenu, 300); // 0.3秒後に閉じる
+                        });
+                    });
+
+                    // メニューの中（リンク以外の場所）をクリックしても閉じないようにする
+                    nav.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                    });
+                }
+
+                //======================================
+                // 8. アコーディオンメニュー機能 (NEW!)
+                //======================================
+                const accordionItems = document.querySelectorAll('.accordion-item');
+                if (accordionItems.length > 0) {
+                    accordionItems.forEach(item => {
+                        const header = item.querySelector('.accordion-header');
+                        header.addEventListener('click', () => {
+                            // クリックされたアイテムの is-open クラスを付け外しする
+                            item.classList.toggle('is-open');
+
+                            accordionItems.forEach(otherItem => {
+                                if (otherItem !== item) {
+                                    otherItem.classList.remove('is-open');
+                                }
+                            });
+                            
+                        });
+                    });
+                }
+
+
+
+        });
+
+
+    </script>
+</body>
+</html>
