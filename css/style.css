@@ -1136,7 +1136,7 @@ body.subpage {
 
 .subpage-content {
     max-width: 800px;
-    margin: 80px auto;
+    margin: 140px auto;
     padding: 0 20px;
     color: rgba(240, 240, 240, 0.9); /* 白文字に */
 }
