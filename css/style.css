@@ -601,7 +601,7 @@ header {
    Flow Section
    =============================================== */
 .flow {
-    padding: 80px 50px;
+    padding: 80px 50px 200px;
     background-color: rgba(17, 17, 17, 0.95);
     position: relative;
     z-index: 3;
