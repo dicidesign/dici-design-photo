@@ -232,12 +232,20 @@ nav a:hover::before {
     transform: translateY(5px) translateX(-50%) scale(5.5);
     opacity: 0.9;
 }
-nav a[href*="#works"]::before { background-color: #D32F2F; }
-nav a[href*="#flow"]::before { background-color: #388E3C; }
-nav a[href*="#price"]::before { background-color: #1976D2; }
-nav a[href*="#contact"]::before { background-color: #616161; }
-nav a[href*="privacy-policy.html"]::before { background-color: #f0ec0b; }
-nav a[href*="tokushoho.html"]::before { background-color: #71b2f7; }
+/* --- ヘッダーのナビゲーション --- */
+header nav a[href*="#works"]::before { background-color: #D32F2F; }
+header nav a[href*="#flow"]::before { background-color: #388E3C; }
+header nav a[href*="#price"]::before { background-color: #1976D2; }
+header nav a[href*="#contact"]::before { background-color: #616161; }
+
+
+/* --- フッターのナビゲーション --- */
+.footer-nav a[href*="#works"]::before { background-color: #D32F2F; }
+.footer-nav a[href*="#flow"]::before { background-color: #388E3C; }
+.footer-nav a[href*="#price"]::before { background-color: #1976D2; }
+.footer-nav a[href*="#contact"]::before { background-color: #616161; }
+.footer-nav a[href*="privacy-policy.html"]::before { background-color: #FBC02D; } /* 黄色 */
+.footer-nav a[href*="tokushoho.html"]::before { background-color: #00BCD4; } /* 水色 */
 
 
 /* ===============================================
@@ -1048,13 +1056,6 @@ footer nav a:hover::before {
 
 }
 
-/* フッターのカラーポイント色設定 */
-.footer-nav a[href="#works"]::before { background-color: #D32F2F; }
-.footer-nav a[href="#flow"]::before { background-color: #388E3C; }
-.footer-nav a[href="#price"]::before { background-color: #1976D2; }
-.footer-nav a[href="#contact"]::before { background-color: #616161; }
-.footer-nav a[href="privacy-policy.html"]::before { background-color: #FBC02D; } /* 黄色 */
-.footer-nav a[href="tokushoho.html"]::before { background-color: #00BCD4; } /* 水色 */
 
 
 .footer-bottom {
