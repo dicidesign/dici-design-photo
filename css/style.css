@@ -236,6 +236,9 @@ nav a[href*="#works"]::before { background-color: #D32F2F; }
 nav a[href*="#flow"]::before { background-color: #388E3C; }
 nav a[href*="#price"]::before { background-color: #1976D2; }
 nav a[href*="#contact"]::before { background-color: #616161; }
+nav a[href*="privacy-policy.html"]::before { background-color: #f0ec0b; }
+nav a[href*="tokushoho.html"]::before { background-color: #71b2f7; }
+
 
 /* ===============================================
    Responsive Header (for Mobile)
