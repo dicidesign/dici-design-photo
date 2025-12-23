@@ -216,7 +216,7 @@ nav a span {
     display: inline-block;
     padding: 8px 0;
 }
-nav a::before {
+/*nav a::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -232,11 +232,11 @@ nav a:hover::before {
     transform: translateY(5px) translateX(-50%) scale(5.5);
     opacity: 0.9;
 }
-/* --- ヘッダーのカラーポイント色指定 --- */
+/* --- ヘッダーのカラーポイント色指定 --- 
 header nav a[href*="#works"]::before { background-color: #D32F2F; }
 header nav a[href*="#flow"]::before { background-color: #388E3C; }
 header nav a[href*="#price"]::before { background-color: #1976D2; }
-header nav a[href*="#contact"]::before { background-color: #616161; }
+header nav a[href*="#contact"]::before { background-color: #616161; }*/
 
 
 
