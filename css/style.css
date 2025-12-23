@@ -1097,25 +1097,6 @@ footer nav a:hover::before {
         margin-bottom: 60px;
     }
 }
-/* ★★★ カラーポイントの色設定 ★★★ */
-.footer-nav a[href="#works"]::before,
-nav a[href="#works"]::before { background-color: #D32F2F; } /* 赤 */
-
-.footer-nav a[href="#flow"]::before,
-nav a[href="#flow"]::before { background-color: #388E3C; } /* 緑 */
-
-.footer-nav a[href="#price"]::before,
-nav a[href="#price"]::before { background-color: #1976D2; } /* 青 */
-
-.footer-nav a[href="#contact"]::before,
-nav a[href="#contact"]::before { background-color: #616161; } /* グレー */
-
-.footer-nav a[href="privacy-policy.html"]::before {
-    background-color: #FBC02D; /* ★ 黄色 */
-}
-.footer-nav a[href="tokushoho.html"]::before {
-    background-color: #00BCD4; /* ★ 水色 */
-}
 
 .footer-bottom {
     text-align: center;
