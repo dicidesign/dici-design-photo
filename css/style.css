@@ -54,7 +54,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/noise.png'); /* CSSファイルからの相対パス */
+    background-image: url('../images/noise.webp'); /* CSSファイルからの相対パス */
     opacity: 0.07;
 }
 .hero-video-wrapper::before {
@@ -177,7 +177,7 @@ header.is-scrolled::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/dici_logo_black.png');
+    background-image: url('../images/dici_logo_black.webp');
     background-size: contain;
     background-repeat: no-repeat;
     
@@ -467,7 +467,7 @@ header {
     height: 36px;
 }
 .side-link:not(.line-link)::after {
-    background-image: url('../images/mail_icon_black.png');
+    background-image: url('../images/mail_icon_black.webp');
 }
 
 .line-link img,
@@ -476,7 +476,7 @@ header {
     height: 44px;
 }
 .line-link::after {
-    background-image: url('../images/line_icon_black.png');
+    background-image: url('../images/line_icon_black.webp');
 }
 
 
