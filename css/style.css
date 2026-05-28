@@ -1261,18 +1261,19 @@ body.subpage {
         margin-bottom: -20px;
     }
     .works {
-        padding: 40px 40px;
+        padding: 40px 15px;
     }
     .gallery {
-        column-count: 1;
+        column-count: 2;
+        column-gap: 10px;
     }
-    /* ★★★ このブロックを追加！ ★★★ */
-    /* 縦長の画像アイテム用のスタイル */
+    .gallery-item {
+        margin-bottom: 10px;
+    }
     .gallery-item.is-portrait {
-        width: 70%; /* ★ 親の列の幅に対して、65%の幅にする */
-        margin-left: auto; /* ★ 右寄せ */
-        margin-right: auto; /* ★ 左寄せ */
-        /* ↑ auto を組み合わせることで、中央揃えになる */
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
     .flow {
         padding: 30px 0px;
@@ -1300,29 +1301,40 @@ body.subpage {
         animation: none;
     }
     .price {
-        padding: 40px 20px;
+        padding: 40px 15px;
     }
     .price-container {
-        flex-direction: column;
-        gap: 50px;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .price-category h3 {
+        font-size: 1rem;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+    .price-item {
+        padding: 15px 0 8px;
+    }
+    .price-image-wrapper {
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
     }
     .price-details {
         display: flex;
-        justify-content: center;
-        align-items: baseline;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         position: relative;
-        margin-left: 0%;
-    }
-    .price-image-wrapper {
-        width: 80%;
-        height: auto;
-        margin-left: 10%;
+        margin-left: 5%;
     }
     .price-details .service-name {
-        font-size: 1.1rem;
+        font-size: 0.75rem;
     }
     .price-details .service-price {
-        font-size: 1.2rem;
+        font-size: 0.85rem;
+        margin-left: 0;
+        margin-top: 4px;
     }
     .faq {
         padding: 0 0px 120px; /* Priceセクションからの続きなので、上のpaddingは無し */
@@ -1521,6 +1533,5 @@ body.subpage {
                 width: calc((100% - 20px) / 3);
             }
     }
-
 
 
