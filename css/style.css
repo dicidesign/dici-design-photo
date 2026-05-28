@@ -24,7 +24,7 @@ body {
     box-sizing: border-box;
     pointer-events: none;
     z-index: 9999;
-    border-radius: 0 0 12px 12px;
+    border-radius: 0 0 24px 24px;
 }
 
 .hero-video-wrapper {
